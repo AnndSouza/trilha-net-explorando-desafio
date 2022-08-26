@@ -19,3 +19,51 @@ O seu programa deverá cálcular corretamente os valores dos métodos da classe 
 
 ## Solução
 O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+
+# Desafio Concluído
+ public void CadastrarHospedes(List<Pessoa> hospedes)
+        {
+            for (int i = 0; i <= hospedes.Count; i++)
+            
+            if (i <= Suite.Capacidade)
+            {
+                Hospedes = hospedes;
+
+            }
+            else
+            {                
+               
+                throw new ArgumentException("A capacidade é menor que o número de hóspedes recebido");
+            } 
+                     
+           
+        }
+
+        public void CadastrarSuite(Suite suite)
+        {
+            Suite = suite;
+        }
+
+        public int ObterQuantidadeHospedes()
+        {
+            
+
+            int quantidade = Hospedes.Count;
+            return quantidade;
+        }
+
+        public decimal CalcularValorDiaria()
+        {
+            
+            
+            
+            decimal valor = DiasReservados * Suite.ValorDiaria;
+            
+            
+            if (DiasReservados >= 10)
+            {
+                valor = valor - (valor * 10/100);
+
+            }
+            
+            return valor;

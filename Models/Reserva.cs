@@ -17,9 +17,9 @@ namespace DesafioProjetoHospedagem.Models
         {
           
             //Implementado!
-            for (int i = 0; i <= hospedes.Count; i++)
             
-            if (i <= Suite.Capacidade)
+            
+            if (hospedes.Count <= Suite.Capacidade)
             {
                 Hospedes = hospedes;
 
